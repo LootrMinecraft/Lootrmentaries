@@ -15,7 +15,7 @@ loom {
 
             data {
                 data()
-                programArgs("--all", "--mod", "lootrmon")
+                programArgs("--all", "--mod", "lootrmentaries")
                 programArgs("--existing", project(":common").file("src/main/resources").absolutePath)
                 programArgs("--output", project(":common").file("src/generated/resources").absolutePath)
             }
@@ -44,8 +44,10 @@ dependencies {
     modCompileOnly("noobanidus.mods.lootr:lootr-neoforge:${rootProject.lootr_version}")
     modRuntimeOnly("noobanidus.mods.lootr:lootr-neoforge:${rootProject.lootr_version}")
 
-    implementation "net.mehvahdjukaar.supplementaries:supplementaries-neoforge:${project.supplementaries_version}"
-    implementation "net.mehvahdjukaar.moonlight:moonlight-neoforge:${project.moonlight_version}"
+    modImplementation "net.mehvahdjukaar:supplementaries-neoforge:${project.supplementaries_version}"
+    modImplementation "net.mehvahdjukaar:moonlight-neoforge:${project.moonlight_version}"
+    implementation(annotationProcessor("com.github.bawnorton.mixinsquared:mixinsquared-common:${mixin_squared_version}"))
+    implementation("com.github.bawnorton.mixinsquared:mixinsquared-forge:${mixin_squared_version}")
 }
 
 processResources {

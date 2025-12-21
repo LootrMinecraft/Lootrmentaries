@@ -10,24 +10,24 @@ license="https://github.com/LootrMinecraft/Lootrmentaries/blob/arch-1.21/LICENSE
     authors="Noobanidus"
     description="Adding native safe, urn, etc compatibility to Supplementaries & Lootr."
 
-[[dependencies.lootrmon]]
+[[dependencies.lootrmentaries]]
     modId="minecraft"
     type="required"
     versionRange="[1.21.1,)"
 
-[[dependencies.lootrmon]]
+[[dependencies.lootrmentaries]]
     modId="neoforge"
     type="required"
     versionRange="[21,)"
 
-[[dependencies.lootrmon]]
+[[dependencies.lootrmentaries]]
     modId="lootr"
     type="required"
     versionRange="[1.21-1.10.35.97,)"
     ordering = "AFTER"
     side = "BOTH"
 
-#[[dependencies.lootrmon]]
+#[[dependencies.lootrmentaries]]
 #    modId="supplementaries"
 #    type="required"
 #    versionRange="[1.7.0,)"

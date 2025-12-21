@@ -1,17 +1,15 @@
-package noobanidus.mods.lootrmon.neoforge.gen;
+package noobanidus.mods.lootrmentaries.neoforge.gen;
 
-import com.cobblemon.mod.common.client.render.block.GildedChestBlockRenderer;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.common.data.SpriteSourceProvider;
-import noobanidus.mods.lootrmon.common.LootrmonIds;
 
 import java.util.concurrent.CompletableFuture;
 
-public class LootrmonAtlasGenerator extends SpriteSourceProvider {
-  public LootrmonAtlasGenerator (PackOutput output, CompletableFuture<HolderLookup.Provider> provider, ExistingFileHelper helper) {
-    super(output, provider, LootrmonIds.MODID, helper);
+public class LootrmentariesAtlasGenerator extends SpriteSourceProvider {
+  public LootrmentariesAtlasGenerator(PackOutput output, CompletableFuture<HolderLookup.Provider> provider, ExistingFileHelper helper) {
+    super(output, provider, noobanidus.mods.lootrmentaries.common.LootrmentariesIds.MODID, helper);
   }
 
   @Override

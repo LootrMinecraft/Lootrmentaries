@@ -1,9 +1,9 @@
-package noobanidus.mods.lootrmon.common;
+package noobanidus.mods.lootrmentaries.common;
 
 import net.minecraft.resources.ResourceLocation;
 
-public class LootrmonIds {
-  public static final String MODID = "lootrmon";
+public class LootrmentariesIds {
+  public static final String MODID = "lootrmentaries";
 
   public static ResourceLocation rl (String path) {
     return ResourceLocation.fromNamespaceAndPath(MODID, path);

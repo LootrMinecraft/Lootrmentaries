@@ -1,13 +1,11 @@
-package noobanidus.mods.lootrmon.neoforge;
+package noobanidus.mods.lootrmentaries.neoforge;
 
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
-import noobanidus.mods.lootrmon.common.LootrmonIds;
 
-@Mod(LootrmonIds.MODID)
-public class Lootrmon {
-  public Lootrmon(ModContainer container, IEventBus modBus) {
-    LootrmonRegistry.register(modBus);
+@Mod(noobanidus.mods.lootrmentaries.common.LootrmentariesIds.MODID)
+public class Lootrmentaries {
+  public Lootrmentaries(ModContainer container, IEventBus modBus) {
   }
 }

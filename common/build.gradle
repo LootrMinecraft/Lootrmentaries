@@ -19,8 +19,10 @@ dependencies {
 
     modCompileOnly("noobanidus.mods.lootr:lootr-common:${rootProject.lootr_version}")
 
-    modCompileOnly "net.mehvahdjukaar.supplementaries:supplementaries:${project.supplementaries_version}"
-    modCompileOnly "net.mehvahdjukaar.moonlight:moonlight:${project.moonlight_version}"
+    modCompileOnly "net.mehvahdjukaar:supplementaries:${project.supplementaries_version}"
+    modCompileOnly "net.mehvahdjukaar:moonlight:${project.moonlight_version}"
+    implementation(annotationProcessor("com.github.bawnorton.mixinsquared:mixinsquared-common:${mixin_squared_version}"))
+    implementation("com.github.bawnorton.mixinsquared:mixinsquared-forge:${mixin_squared_version}")
 }
 
 architectury {
@@ -28,7 +30,7 @@ architectury {
 }
 
 loom {
-    accessWidenerPath = file("src/main/resources/lootrmon.accesswidener")
+    accessWidenerPath = file("src/main/resources/lootrmentaries.accesswidener")
 }
 
 jar {

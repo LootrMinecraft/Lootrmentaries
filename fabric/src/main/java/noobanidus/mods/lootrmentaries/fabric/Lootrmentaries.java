@@ -1,10 +1,9 @@
-package noobanidus.mods.lootrmon.fabric;
+package noobanidus.mods.lootrmentaries.fabric;
 
 import net.fabricmc.api.ModInitializer;
 
-public class Lootrmon implements ModInitializer {
+public class Lootrmentaries implements ModInitializer {
   @Override
   public void onInitialize() {
-    LootrmonRegistry.register();
   }
 }

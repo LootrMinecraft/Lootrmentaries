@@ -40,13 +40,13 @@ subprojects {
     Map<String, Map<String, String>> platformSettings = [
             "fabric": [
                     "curse-id": "1405644",
-                    "curse-slug": "lootrmon",
+                    "curse-slug": "lootrmentaries",
                     "modrinth-id": "ywwXJDli",
                     "title": "for Fabric"
             ],
             "neoforge": [
                     "curse-id": "1405644",
-                    "curse-slug": "lootrmon",
+                    "curse-slug": "lootrmentaries",
                     "modrinth-id": "ywwXJDli",
                     "title": "for NeoForge"
             ]
@@ -104,7 +104,7 @@ subprojects {
                     accessToken = project.findProperty("curse_auth")
                     projectId = uploadSettings["curse-id"]
                     projectSlug = uploadSettings["curse-slug"]
-                    announcementTitle = "Lootrmon ${rootProject.minecraft_version}-${rootProject.mod_version} ${uploadSettings["title"]} on CurseForge"
+                    announcementTitle = "Lootrmentaries ${rootProject.minecraft_version}-${rootProject.mod_version} ${uploadSettings["title"]} on CurseForge"
                     // TODO: Hard-coded
                     minecraftVersions.add(rootProject.minecraft_version)
 
@@ -125,7 +125,7 @@ subprojects {
                 modrinth {
                     accessToken = project.findProperty("modrinth_auth")
                     projectId = uploadSettings["modrinth-id"]
-                    announcementTitle = "Lootrmon ${rootProject.minecraft_version}-${rootProject.mod_version} ${uploadSettings["title"]} on Modrinth"
+                    announcementTitle = "Lootrmentaries ${rootProject.minecraft_version}-${rootProject.mod_version} ${uploadSettings["title"]} on Modrinth"
                     minecraftVersions.add(rootProject.minecraft_version)
 
                     dependencies {
@@ -143,7 +143,7 @@ subprojects {
             if (project.hasProperty("curse_discord_webhook")) {
                 discord {
                     webhookUrl = project.findProperty("curse_discord_webhook")
-                    username = "Lootrmon Update"
+                    username = "Lootrmentaries Update"
                     setPlatforms(publishMods.platforms.curseforge, publishMods.platforms.modrinth)
                 }
             }
@@ -190,12 +190,16 @@ allprojects {
                 includeGroup 'noobanidus.mods.lootr'
             }
         }
+        maven {
+            url = "https://registry.somethingcatchy.net/repository/maven-releases"
+        }
         maven { url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/' }
         maven { url 'https://maven.impactdev.net/repository/development/' }
         maven { url 'https://thedarkcolour.github.io/KotlinForForge/' }
         maven { url 'https://maven.wispforest.io/releases' }
         maven { url 'https://maven.su5ed.dev/releases' }
         maven { url 'https://maven.fabricmc.net' }
+        maven { url 'https://jitpack.io' }
     }
 
     tasks.withType(JavaCompile) {
