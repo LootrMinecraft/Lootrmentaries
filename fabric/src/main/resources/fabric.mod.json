@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "lootrmentaries",
+  "version": "${version}",
+  "name": "Lootr & Supplementaries Compatibility",
+  "description": "An add-on to Lootr & Supplementaries providing native urns, safes, etc.",
+  "authors": [
+    "Noobanidus"
+  ],
+  "contact": {
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/lootrmentarise",
+    "sources": "https://github.com/LootrMinecraft/LootrMentaries/tree/arch-1.21",
+    "issues": "https://github.com/LootrMinecraft/LootrMentaries/issues"
+  },
+  "license": "MIT License",
+  "icon": "icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "noobanidus.mods.lootrmentaries.fabric.Lootrmentaries"
+    ],
+    "client": [
+      "noobanidus.mods.lootrmentaries.fabric.LootrmentariesClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.17.3",
+    "fabric": "*",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "lootr": ">=1.21-1.10.35.97"
+  }
+}
