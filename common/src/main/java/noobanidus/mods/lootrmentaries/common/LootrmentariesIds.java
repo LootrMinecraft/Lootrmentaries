@@ -9,9 +9,9 @@ public class LootrmentariesIds {
     return ResourceLocation.fromNamespaceAndPath(MODID, path);
   }
 
-  public static ResourceLocation crl (String path) {
-    return ResourceLocation.fromNamespaceAndPath("cobblemon", path);
+  public static ResourceLocation srl (String path) {
+    return ResourceLocation.fromNamespaceAndPath("supplementaries", path);
   }
 
-  public static final ResourceLocation GILDED_CHEST = rl("gilded_chest");
+  public static final ResourceLocation GILDED_CHEST = rl("urn");
 }

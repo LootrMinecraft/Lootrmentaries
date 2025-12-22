@@ -1,0 +1,8 @@
+{
+  "parent": "supplementaries:block/urn",
+  "textures": {
+    "1": "lootr:block/urn_side",
+    "2": "lootr:block/urn_top",
+    "particle": "lootr:block/urn_side"
+  }
+}
