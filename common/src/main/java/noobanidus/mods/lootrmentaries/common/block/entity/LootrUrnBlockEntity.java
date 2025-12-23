@@ -1,7 +1,6 @@
 package noobanidus.mods.lootrmentaries.common.block.entity;
 
 import net.mehvahdjukaar.moonlight.api.block.ItemDisplayTile;
-import net.mehvahdjukaar.supplementaries.common.block.tiles.UrnBlockTile;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;

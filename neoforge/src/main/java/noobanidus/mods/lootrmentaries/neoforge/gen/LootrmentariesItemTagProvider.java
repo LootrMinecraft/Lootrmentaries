@@ -7,6 +7,7 @@ import net.minecraft.data.tags.TagsProvider;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import noobanidus.mods.lootr.common.api.LootrTags;
+import noobanidus.mods.lootrmentaries.neoforge.LootrmentariesRegistry;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
@@ -18,6 +19,6 @@ public class LootrmentariesItemTagProvider extends ItemTagsProvider {
 
   @Override
   protected void addTags(HolderLookup.Provider arg) {
-    tag(LootrTags.Items.CONTAINERS);
+    tag(LootrTags.Items.CONTAINERS).add(LootrmentariesRegistry.URN_ITEM.get());
   }
 }

@@ -7,5 +7,6 @@ import net.neoforged.fml.common.Mod;
 @Mod(noobanidus.mods.lootrmentaries.common.LootrmentariesIds.MODID)
 public class Lootrmentaries {
   public Lootrmentaries(ModContainer container, IEventBus modBus) {
+    LootrmentariesRegistry.register(modBus);
   }
 }
