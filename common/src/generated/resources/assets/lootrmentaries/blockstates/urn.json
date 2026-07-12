@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "treasure=false,waterlogged=false": {
+      "model": "lootrmentaries:block/urn"
+    },
+    "treasure=false,waterlogged=true": {
+      "model": "lootrmentaries:block/urn"
+    },
+    "treasure=true,waterlogged=false": {
+      "model": "lootrmentaries:block/urn"
+    },
+    "treasure=true,waterlogged=true": {
+      "model": "lootrmentaries:block/urn"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "package": "noobanidus.mods.lootrmentaries.common.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "MixinUrnBlock"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "minVersion": "0.8"
+}

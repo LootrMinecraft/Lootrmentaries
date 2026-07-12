@@ -1,5 +1,6 @@
 package noobanidus.mods.lootrmentaries.neoforge.gen;
 
+import net.minecraft.client.renderer.texture.atlas.sources.SingleFile;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;

@@ -1,0 +1,13 @@
+{
+	"parent": "block/block",
+	"loader": "lootr:custom_model",
+	"unopened": {
+		"parent": "lootrmentaries:block/urn_unopened"
+	},
+	"opened": {
+		"parent": "lootrmentaries:block/urn_open"
+	},
+	"textures": {
+		"particle": "lootrmentaries:block/urn_side"
+	}
+}

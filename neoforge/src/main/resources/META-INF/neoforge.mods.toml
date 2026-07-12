@@ -27,9 +27,12 @@ license="https://github.com/LootrMinecraft/Lootrmentaries/blob/arch-1.21/LICENSE
     ordering = "AFTER"
     side = "BOTH"
 
-#[[dependencies.lootrmentaries]]
-#    modId="supplementaries"
-#    type="required"
-#    versionRange="[1.7.0,)"
-#    ordering = "AFTER"
-#    side = "BOTH"
+[[dependencies.lootrmentaries]]
+    modId="supplementaries"
+    type="required"
+    versionRange="[1.7.0,)"
+    ordering = "AFTER"
+    side = "BOTH"
+
+[[mixins]]
+    config="lootrmentaries-common.mixins.json"

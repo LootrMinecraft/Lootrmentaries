@@ -29,5 +29,8 @@
     "minecraft": "~1.21.1",
     "java": ">=21",
     "lootr": ">=1.21-1.10.35.97"
-  }
+  },
+  "mixins": [
+    "lootrmentaries-common.mixins.json"
+  ]
 }

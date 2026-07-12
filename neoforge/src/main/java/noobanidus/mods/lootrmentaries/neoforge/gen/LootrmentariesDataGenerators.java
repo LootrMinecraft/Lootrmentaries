@@ -25,5 +25,6 @@ public class LootrmentariesDataGenerators {
     generator.addProvider(event.includeServer(), new LootrmentariesItemTagProvider(output, provider, blocks.contentsGetter(), helper));
     generator.addProvider(event.includeClient(), new LootrmentariesAtlasGenerator(output, provider, helper));
     generator.addProvider(event.includeClient(), new LootrmentariesLangProvider(output));
+    generator.addProvider(event.includeClient(), new LootrmentariesBlockstateProvider(output, helper));
   }
 }
