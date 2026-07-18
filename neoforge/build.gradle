@@ -116,7 +116,6 @@ neoForge {
     }
 
     validateAccessTransformers.set(true)
-    addModdingDependenciesTo(sourceSets.gameTest)
 
     mods {
         // define mod <-> source bindings

@@ -45,6 +45,7 @@ allprojects {
             }
             filter {
                 includeGroupAndSubgroups("mezz.jei")
+                includeGroupAndSubgroups("noobanidus.mods.lootr")
             }
         }
         exclusiveContent {
@@ -69,6 +70,16 @@ allprojects {
                 includeGroupAndSubgroups("me.shedaniel")
             }
         }
+        maven {
+            url = "https://registry.somethingcatchy.net/repository/maven-releases"
+        }
+        maven { url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/' }
+        maven { url 'https://maven.impactdev.net/repository/development/' }
+        maven { url 'https://thedarkcolour.github.io/KotlinForForge/' }
+        maven { url 'https://maven.wispforest.io/releases' }
+        maven { url 'https://maven.su5ed.dev/releases' }
+        maven { url 'https://maven.fabricmc.net' }
+        maven { url 'https://jitpack.io' }
     }
 
     tasks.register('buildAndRelease') {

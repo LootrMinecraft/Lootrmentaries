@@ -31,10 +31,10 @@ dependencies {
     // COMPAT
     compileOnly("me.shedaniel.cloth:cloth-config-fabric:${rootProject.cloth_config}") { transitive = false }
     compileOnly("maven.modrinth:jade:${rootProject.jade_version}+neoforge")    
-    modCompileOnly("noobanidus.mods.lootr:lootr-common:${rootProject.lootr_version}")
+    compileOnly("noobanidus.mods.lootr:lootr-common:${rootProject.lootr_version}")
 
-    modCompileOnly "net.mehvahdjukaar:supplementaries:${project.supplementaries_version}"
-    modCompileOnly "net.mehvahdjukaar:moonlight:${project.moonlight_version}"
+    compileOnly "net.mehvahdjukaar:supplementaries-common:${project.supplementaries_version}"
+    compileOnly "net.mehvahdjukaar:moonlight-common:${project.moonlight_version}"
     implementation(annotationProcessor("com.github.bawnorton.mixinsquared:mixinsquared-common:${mixin_squared_version}"))
     implementation("com.github.bawnorton.mixinsquared:mixinsquared-forge:${mixin_squared_version}")
 }
